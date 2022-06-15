@@ -1,0 +1,17 @@
+C:\Users\matta\source\repos\WpfAppMVVMpractice\WpfAppMVVMpractice\bin\Debug\WpfAppMVVMpractice.exe.config
+C:\Users\matta\source\repos\WpfAppMVVMpractice\WpfAppMVVMpractice\bin\Debug\WpfAppMVVMpractice.exe
+C:\Users\matta\source\repos\WpfAppMVVMpractice\WpfAppMVVMpractice\bin\Debug\WpfAppMVVMpractice.pdb
+C:\Users\matta\source\repos\WpfAppMVVMpractice\WpfAppMVVMpractice\obj\Debug\WpfAppMVVMpractice.csproj.AssemblyReference.cache
+C:\Users\matta\source\repos\WpfAppMVVMpractice\WpfAppMVVMpractice\obj\Debug\WpfAppMVVMpractice.csproj.SuggestedBindingRedirects.cache
+C:\Users\matta\source\repos\WpfAppMVVMpractice\WpfAppMVVMpractice\obj\Debug\View\MainWindow.g.cs
+C:\Users\matta\source\repos\WpfAppMVVMpractice\WpfAppMVVMpractice\obj\Debug\App.g.cs
+C:\Users\matta\source\repos\WpfAppMVVMpractice\WpfAppMVVMpractice\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\matta\source\repos\WpfAppMVVMpractice\WpfAppMVVMpractice\obj\Debug\WpfAppMVVMpractice_MarkupCompile.cache
+C:\Users\matta\source\repos\WpfAppMVVMpractice\WpfAppMVVMpractice\obj\Debug\WpfAppMVVMpractice_MarkupCompile.lref
+C:\Users\matta\source\repos\WpfAppMVVMpractice\WpfAppMVVMpractice\obj\Debug\View\MainWindow.baml
+C:\Users\matta\source\repos\WpfAppMVVMpractice\WpfAppMVVMpractice\obj\Debug\WpfAppMVVMpractice.g.resources
+C:\Users\matta\source\repos\WpfAppMVVMpractice\WpfAppMVVMpractice\obj\Debug\WpfAppMVVMpractice.Properties.Resources.resources
+C:\Users\matta\source\repos\WpfAppMVVMpractice\WpfAppMVVMpractice\obj\Debug\WpfAppMVVMpractice.csproj.GenerateResource.cache
+C:\Users\matta\source\repos\WpfAppMVVMpractice\WpfAppMVVMpractice\obj\Debug\WpfAppMVVMpractice.csproj.CoreCompileInputs.cache
+C:\Users\matta\source\repos\WpfAppMVVMpractice\WpfAppMVVMpractice\obj\Debug\WpfAppMVVMpractice.exe
+C:\Users\matta\source\repos\WpfAppMVVMpractice\WpfAppMVVMpractice\obj\Debug\WpfAppMVVMpractice.pdb
