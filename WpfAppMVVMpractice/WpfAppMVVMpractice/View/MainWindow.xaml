@@ -15,6 +15,8 @@
     <Grid>
         <TextBlock Text="{Binding Progress}"/>
         <TextBlock Text="{Binding Result}" Margin="0,22,0,-23"/>
-        <Button Width="100" Height="20" Content="test" Command="{Binding Start}"/>
+        <Button Width="100" Height="20" Content="intesnive cpu" Command="{Binding Start}" Margin="74,10,74,112"/>
+        <TextBox VerticalAlignment="Bottom" Height="20" Text="{Binding Message}"/>
+        <Button Width="100" Height="20" Content="file write" Command="{Binding StartFileWrite}" Margin="74,86,74,36"/>
     </Grid>
 </Window>

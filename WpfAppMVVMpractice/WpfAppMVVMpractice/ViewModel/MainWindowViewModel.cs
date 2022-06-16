@@ -1,6 +1,7 @@
 ﻿using System;
 using System.ComponentModel;
 using System.Windows.Input;
+using System.IO;
 
 namespace WpfAppMVVMpractice.ViewModel
 {
@@ -8,11 +9,24 @@ namespace WpfAppMVVMpractice.ViewModel
     {
         public event PropertyChangedEventHandler PropertyChanged;
         DelegateCommand StartWork;
+        DelegateCommand StartFileWriteMessage;
         public Model.FindPrimeNumber FindPrimeNumber { get; } =
             new Model.FindPrimeNumber();
 
+        public event Action MessageChanged;
+        private string _message = "mrdkos";
+        public string Message
+        {
+            get => _message;
+            set
+            {
+                _message = value;
+            }
+        }
+
         public MainWindowViewModel()
         {
+            StartFileWriteMessage = new DelegateCommand(testFunction);
             StartWork = new DelegateCommand(FindPrimeNumber.FindPrimeNumberAsync);
             FindPrimeNumber.ProgressChanged += FindPrimeNumber_ProgressChanged;
             FindPrimeNumber.ResultChanged += FindPrimeNumber_ResultChanged;
@@ -25,6 +39,15 @@ namespace WpfAppMVVMpractice.ViewModel
         private void FindPrimeNumber_ResultChanged()
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("Result"));
+        }
+        void testFunction(object o)
+        {
+            File.WriteAllText("test.txt", Message);
+        }
+
+        public ICommand StartFileWrite
+        {
+            get => StartFileWriteMessage;
         }
 
         public ICommand Start

@@ -4,11 +4,11 @@
 winexe
 C#
 .cs
-C:\Users\matyas.schuller\Documents\GitHub\MVVMpractice\WpfAppMVVMpractice\WpfAppMVVMpractice\obj\Debug\
+C:\Users\matyas.schuller\Documents\GitHub\MVVMpractice\WpfAppMVVMpractice\WpfAppMVVMpractice\obj\Release\
 WpfAppMVVMpractice
 none
 false
-DEBUG;TRACE
+TRACE
 C:\Users\matyas.schuller\Documents\GitHub\MVVMpractice\WpfAppMVVMpractice\WpfAppMVVMpractice\App.xaml
 1871162140
 
@@ -16,5 +16,5 @@ C:\Users\matyas.schuller\Documents\GitHub\MVVMpractice\WpfAppMVVMpractice\WpfApp
 13-1310406943
 View\MainWindow.xaml;
 
-False
+True
 
