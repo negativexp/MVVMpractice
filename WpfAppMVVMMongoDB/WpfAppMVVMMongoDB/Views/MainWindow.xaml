@@ -22,8 +22,8 @@
         </DataGrid>
         
         <StackPanel VerticalAlignment="Bottom" Orientation="Horizontal">
-            <Button Width="100" Height="30" Content="Add person" Command="{Binding InserPerson}"/>
-            <Button Width="100" Height="30"/>
+            <Button Width="100" Height="30" Content="Remove" Command="{Binding DeleteUser}" CommandParameter="{Binding ElementName=DataGridItems, Path=SelectedItem}"/>
+            <Button Width="100" Height="30" Content="Count" Command="{Binding Count}"/>
         </StackPanel>
     </Grid>
 </Window>
