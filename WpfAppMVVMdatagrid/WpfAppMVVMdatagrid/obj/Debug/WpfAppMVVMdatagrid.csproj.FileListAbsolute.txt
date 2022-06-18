@@ -1,0 +1,17 @@
+C:\Users\matta\Documents\GitHub\MVVMpractice\WpfAppMVVMdatagrid\WpfAppMVVMdatagrid\bin\Debug\WpfAppMVVMdatagrid.exe.config
+C:\Users\matta\Documents\GitHub\MVVMpractice\WpfAppMVVMdatagrid\WpfAppMVVMdatagrid\bin\Debug\WpfAppMVVMdatagrid.exe
+C:\Users\matta\Documents\GitHub\MVVMpractice\WpfAppMVVMdatagrid\WpfAppMVVMdatagrid\bin\Debug\WpfAppMVVMdatagrid.pdb
+C:\Users\matta\Documents\GitHub\MVVMpractice\WpfAppMVVMdatagrid\WpfAppMVVMdatagrid\obj\Debug\WpfAppMVVMdatagrid.csproj.AssemblyReference.cache
+C:\Users\matta\Documents\GitHub\MVVMpractice\WpfAppMVVMdatagrid\WpfAppMVVMdatagrid\obj\Debug\WpfAppMVVMdatagrid.csproj.SuggestedBindingRedirects.cache
+C:\Users\matta\Documents\GitHub\MVVMpractice\WpfAppMVVMdatagrid\WpfAppMVVMdatagrid\obj\Debug\Views\MainWindow.g.cs
+C:\Users\matta\Documents\GitHub\MVVMpractice\WpfAppMVVMdatagrid\WpfAppMVVMdatagrid\obj\Debug\App.g.cs
+C:\Users\matta\Documents\GitHub\MVVMpractice\WpfAppMVVMdatagrid\WpfAppMVVMdatagrid\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\matta\Documents\GitHub\MVVMpractice\WpfAppMVVMdatagrid\WpfAppMVVMdatagrid\obj\Debug\WpfAppMVVMdatagrid_MarkupCompile.cache
+C:\Users\matta\Documents\GitHub\MVVMpractice\WpfAppMVVMdatagrid\WpfAppMVVMdatagrid\obj\Debug\WpfAppMVVMdatagrid_MarkupCompile.lref
+C:\Users\matta\Documents\GitHub\MVVMpractice\WpfAppMVVMdatagrid\WpfAppMVVMdatagrid\obj\Debug\Views\MainWindow.baml
+C:\Users\matta\Documents\GitHub\MVVMpractice\WpfAppMVVMdatagrid\WpfAppMVVMdatagrid\obj\Debug\WpfAppMVVMdatagrid.g.resources
+C:\Users\matta\Documents\GitHub\MVVMpractice\WpfAppMVVMdatagrid\WpfAppMVVMdatagrid\obj\Debug\WpfAppMVVMdatagrid.Properties.Resources.resources
+C:\Users\matta\Documents\GitHub\MVVMpractice\WpfAppMVVMdatagrid\WpfAppMVVMdatagrid\obj\Debug\WpfAppMVVMdatagrid.csproj.GenerateResource.cache
+C:\Users\matta\Documents\GitHub\MVVMpractice\WpfAppMVVMdatagrid\WpfAppMVVMdatagrid\obj\Debug\WpfAppMVVMdatagrid.csproj.CoreCompileInputs.cache
+C:\Users\matta\Documents\GitHub\MVVMpractice\WpfAppMVVMdatagrid\WpfAppMVVMdatagrid\obj\Debug\WpfAppMVVMdatagrid.exe
+C:\Users\matta\Documents\GitHub\MVVMpractice\WpfAppMVVMdatagrid\WpfAppMVVMdatagrid\obj\Debug\WpfAppMVVMdatagrid.pdb

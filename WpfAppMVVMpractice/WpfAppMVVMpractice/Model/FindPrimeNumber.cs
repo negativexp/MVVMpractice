@@ -17,8 +17,11 @@ namespace WpfAppMVVMpractice.Model
             get => _result;
             set
             {
-                _result = value;
-                ResultChanged?.Invoke();
+                if(value != _result)
+                {
+                    _result = value;
+                    ResultChanged?.Invoke();
+                }
             }
         }
         public string Progress

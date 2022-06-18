@@ -2,14 +2,17 @@
 using System.ComponentModel;
 using System.Windows.Input;
 using System.IO;
+using System.Windows;
 
 namespace WpfAppMVVMpractice.ViewModel
 {
     public class MainWindowViewModel : INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged;
+
         DelegateCommand StartWork;
         DelegateCommand StartFileWriteMessage;
+
         public Model.FindPrimeNumber FindPrimeNumber { get; } =
             new Model.FindPrimeNumber();
 
@@ -39,6 +42,7 @@ namespace WpfAppMVVMpractice.ViewModel
         private void FindPrimeNumber_ResultChanged()
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("Result"));
+            MessageBox.Show("result changed");
         }
         void testFunction(object o)
         {
