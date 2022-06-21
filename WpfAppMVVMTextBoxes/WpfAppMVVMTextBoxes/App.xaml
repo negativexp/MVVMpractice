@@ -1,9 +1,0 @@
-﻿<Application x:Class="WpfAppMVVMTextBoxes.App"
-             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="clr-namespace:WpfAppMVVMTextBoxes"
-             StartupUri="Views/MainWindow.xaml">
-    <Application.Resources>
-         
-    </Application.Resources>
-</Application>
