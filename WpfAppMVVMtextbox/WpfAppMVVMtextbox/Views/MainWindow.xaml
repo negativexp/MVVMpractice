@@ -1,0 +1,30 @@
+﻿<Window x:Class="WpfAppMVVMtextbox.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:vm="clr-namespace:WpfAppMVVMtextbox.ViewModels"
+        xmlns:local="clr-namespace:WpfAppMVVMtextbox"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="382" Width="408">
+
+    <Window.DataContext>
+        <vm:MainWindowViewModel/>
+    </Window.DataContext>
+    
+    <Grid>
+        <StackPanel Margin="10">
+            <StackPanel.Resources>
+                <Style TargetType="{x:Type TextBox}">
+                    <Setter Property="Margin" Value="5"/>
+                </Style>
+            </StackPanel.Resources>
+
+            <TextBox Text="{Binding TextBoxes.Name}"/>
+            <TextBox Text="{Binding TextBoxes.Age}"/>
+            <TextBox Text="{Binding TextBoxes.Job}"/>
+
+            <Button Height="30" Content="Write" Margin="5" Command="{Binding WriteFile}"/>
+        </StackPanel>
+    </Grid>
+</Window>
