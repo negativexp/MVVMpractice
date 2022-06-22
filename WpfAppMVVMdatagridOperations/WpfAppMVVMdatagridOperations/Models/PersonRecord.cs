@@ -22,8 +22,8 @@ namespace WpfAppMVVMdatagridOperations.Models
                 OnPropertyChanged();
             }
         }
-        private int _name;
-        public int Name
+        private string _name;
+        public string Name
         {
             get => _name;
             set
@@ -33,8 +33,8 @@ namespace WpfAppMVVMdatagridOperations.Models
             }
         }
 
-        private ObservableCollection<PersonRecord> _personRecordList;
-        public ObservableCollection<PersonRecord> PersonRecordList
+        private List<Person> _personRecordList;
+        public List<Person> PersonRecordList
         {
             get => _personRecordList;
             set

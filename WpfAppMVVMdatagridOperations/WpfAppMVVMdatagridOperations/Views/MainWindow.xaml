@@ -4,9 +4,23 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfAppMVVMdatagridOperations"
+        xmlns:vm="clr-namespace:WpfAppMVVMdatagridOperations.ViewModels"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
 
-    </Grid>
+    <Window.DataContext>
+        <vm:MainWindowViewModel/>
+    </Window.DataContext>
+
+    <StackPanel>
+        <TextBox Text="{Binding Path=PersonRecord.Id, Mode=TwoWay}"/>
+        <TextBox Text="{Binding Path=PersonRecord.Name, Mode=TwoWay}"/>
+        <Button Content="Add" Command="{Binding AddCommand}"/>
+        
+        <DataGrid Height="200" Margin="20"
+                  ItemsSource="{Binding PersonRecord.PersonRecordList}"
+                  CanUserAddRows="False"
+                  IsReadOnly="True">
+        </DataGrid>
+    </StackPanel>
 </Window>
