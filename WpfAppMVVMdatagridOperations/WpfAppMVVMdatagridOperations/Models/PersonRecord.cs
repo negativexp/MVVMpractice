@@ -5,6 +5,8 @@ using System.Collections.Specialized;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using MongoDB.Bson;
+using MongoDB.Bson.Serialization.Attributes;
 
 //https://dotnetgenetics.blogspot.com/2021/02/wpf-crud-with-datagrid-mvvm-entity.html
 
@@ -12,8 +14,8 @@ namespace WpfAppMVVMdatagridOperations.Models
 {
     class PersonRecord : ViewModels.ViewModelBase
     {
-        private int _id;
-        public int Id
+        private string _id;
+        public string Id
         {
             get => _id;
             set

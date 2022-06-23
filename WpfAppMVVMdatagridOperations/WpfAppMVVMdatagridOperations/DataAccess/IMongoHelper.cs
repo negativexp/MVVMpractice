@@ -57,12 +57,11 @@ namespace WpfAppMVVMdatagridOperations.DataAccess
                 new UpdateOptions { IsUpsert = true });
         }
 
-        public void DeleteDocument<T>(string collectionName, Guid id)
+        public void DeleteDocument<T>(string collectionName, ObjectId id)
         {
             var collection = db.GetCollection<T>(collectionName);
             var filter = Builders<T>.Filter.Eq("Id", id);
             collection.DeleteOne(filter);
-
         }
     }
 }

@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
 using System.Windows;
+using MongoDB.Bson;
 
 namespace WpfAppMVVMdatagridOperations.ViewModels
 {
@@ -16,6 +17,7 @@ namespace WpfAppMVVMdatagridOperations.ViewModels
 
 
         ICommand _addCommand;
+        ICommand _deleteCommand;
 
         public MainWindowViewModel()
         {
@@ -24,6 +26,7 @@ namespace WpfAppMVVMdatagridOperations.ViewModels
             _personEntity = new Models.Person();
 
             _addCommand = new RelayCommand(param => AddPerson(), null);
+            _deleteCommand = new RelayCommand(param => DeletePerson(param), null);
             GetAll();
         }
 
@@ -32,9 +35,13 @@ namespace WpfAppMVVMdatagridOperations.ViewModels
             get => _addCommand;
         }
 
+        public ICommand DeleteCommand
+        {
+            get => _deleteCommand;
+        }
+
         public void AddPerson()
         {
-            _personEntity.Id = PersonRecord.Id;
             _personEntity.Name = PersonRecord.Name;
             try
             {
@@ -48,10 +55,27 @@ namespace WpfAppMVVMdatagridOperations.ViewModels
             }
         }
 
+        public void DeletePerson(object obj)
+        {
+            if(obj is Models.Person person)
+            {
+                try
+                {
+                    ObjectId id = ObjectId.Parse(person.Id);
+                    _personRepo.DeletePerson(id);
+                }
+                catch (Exception ex) { MessageBox.Show($"something went wrong\n{ex.ToString()}"); }
+                finally
+                {
+                    GetAll();
+                }
+            }
+        }
+
         public void ResetData()
         {
-            PersonRecord.Id = 0;
-            PersonRecord.Name = String.Empty;
+            _personEntity.Name = String.Empty;
+            _personEntity.Id = String.Empty;
         }
 
         public void GetAll()
@@ -62,7 +86,6 @@ namespace WpfAppMVVMdatagridOperations.ViewModels
                 Id = data.Id,
                 Name = data.Name,
             }));
-
         }
     }
 }

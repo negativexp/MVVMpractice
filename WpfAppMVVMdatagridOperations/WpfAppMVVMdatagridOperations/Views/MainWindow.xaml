@@ -13,11 +13,13 @@
     </Window.DataContext>
 
     <StackPanel>
-        <TextBox Text="{Binding Path=PersonRecord.Id, Mode=TwoWay}"/>
         <TextBox Text="{Binding Path=PersonRecord.Name, Mode=TwoWay}"/>
         <Button Content="Add" Command="{Binding AddCommand}"/>
+        <Button Content="Delete" Command="{Binding DeleteCommand}"
+                CommandParameter="{Binding ElementName=DataGridPeople, Path=SelectedItem}"/>
         
         <DataGrid Height="200" Margin="20"
+                  x:Name="DataGridPeople"
                   ItemsSource="{Binding PersonRecord.PersonRecordList}"
                   CanUserAddRows="False"
                   IsReadOnly="True">

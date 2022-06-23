@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System.Windows;
+using MongoDB.Bson;
 
 namespace WpfAppMVVMdatagridOperations.DataAccess
 {
@@ -26,8 +27,12 @@ namespace WpfAppMVVMdatagridOperations.DataAccess
 
         public void AddPerson(Models.Person person)
         {
-            MessageBox.Show($"{person.Id} ; {person.Name}");
             database.InsertDocument(CollectionName, person);
+        }
+
+        public void DeletePerson(ObjectId id)
+        {
+            database.DeleteDocument<Models.Person>("People", id);
         }
 
         public List<Models.Person> GetAll()
